@@ -57,6 +57,8 @@ public class Arena2DEnvironment extends Environment {
 
     @Override
     public Collection<Literal> getPercepts(String agName) {
+        initializeAgentIfNeeded(agName);
+        
         throw new IllegalStateException("not implemented");
     }
 
@@ -111,4 +113,7 @@ public class Arena2DEnvironment extends Environment {
         notifyModelChangedToView();
         return result;
     }
+
+    
+
 }

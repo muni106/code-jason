@@ -2,7 +2,7 @@ MAS robots {
 
 	infrastructure: Centralised // no distribution, the whole MAS runs in the same host
 
-	environment: env.TemperatureEnvironment()
+	environment: env.TemperatureEnvironment(30)
 
 	agents: // which agents partecipates the MAS?
 		thermostat thermostat_agent;

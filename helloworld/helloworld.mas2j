@@ -3,6 +3,8 @@ MAS helloworld {
 	infrastructure: Centralised
 
 	agents:
+		// which and how many agents will be started at the startup of the system
+		// identifier type
 		agent1 hello_agent;
 
 	aslSourcePath:
