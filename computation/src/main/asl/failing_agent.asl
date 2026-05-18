@@ -7,6 +7,7 @@ failures(0).
 
 /* Plans */
 +!gamble <-
+    .wait(1000);
     .println("Head or Cross?");
     .random(Coin);
     if (Coin >= 0.5) {
@@ -17,7 +18,6 @@ failures(0).
         .fail
     }.
 
-/*
 -!gamble : failures(N) & max_failures(M) <-
     -+failures(N + 1);
     if (N < M) {
@@ -26,4 +26,3 @@ failures(0).
     } else {
         .print("I'm done with this shit.");
     }.
-*/

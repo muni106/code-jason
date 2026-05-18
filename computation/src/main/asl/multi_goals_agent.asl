@@ -2,7 +2,7 @@
 
 /* Initial goals */
 
-!count(0, 10, up).
+!count(5, 10, up).
 !count(100, 90, down).
 
 /* Plans */

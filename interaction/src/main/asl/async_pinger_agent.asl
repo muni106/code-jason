@@ -14,10 +14,12 @@ other(pong).
   !sendMessageTo(ball, Receiver).
 
 +ball[source(Sender)] : turn(other) & other(Sender) <-
+  .wait(1000);
   -+turn(me);
   -ball[source(Sender)];
   .print("Received ball from ", Sender);
-  .print("Done").
+  !send_ping.
+
 
 +!sendMessageTo(Message, Receiver) <-
   .print("Sending ", Message, " to ", Receiver);

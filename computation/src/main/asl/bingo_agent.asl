@@ -9,7 +9,8 @@ count_extracted(0).
     +extracted(X);
     -+count_extracted(N + 1);
     .print(X);
-    !!bingo.
+    //!!bingo. <- that didn't really made sense
+    !bingo.
 
 +?extract_new(X) <-
     .wait(1000);

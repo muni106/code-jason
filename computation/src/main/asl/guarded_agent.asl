@@ -2,7 +2,6 @@
 
 /* Initial beliefs and rules */
 
-
 /* Initial Goals */
 !start(1, 10).
 
